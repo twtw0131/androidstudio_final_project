@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".FoodCreate">
+
+  <ImageButton
+      android:id="@+id/imageButton"
+      android:layout_width="match_parent"
+      android:layout_height="114dp"
+      android:background="@android:color/transparent"
+      app:srcCompat="@drawable/photo"
+      android:enabled="false"/>
+
+  <ImageView
+      android:id="@+id/imageView"
+      android:layout_width="match_parent"
+      android:layout_height="200dp"
+      tools:srcCompat="@tools:sample/avatars"
+      android:enabled="false"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal">
+
+    <EditText
+        android:id="@+id/foodNameEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="음식 이름"
+        android:fontFamily="@font/ansong"
+        android:inputType="text"
+        android:enabled="false"/>
+
+    <EditText
+        android:id="@+id/foodCountEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:ems="10"
+        android:hint="음식 수량"
+        android:fontFamily="@font/ansong"
+        android:inputType="number"
+        android:enabled="false"/>
+
+  </LinearLayout>
+
+  <EditText
+      android:id="@+id/contentEditText"
+      android:layout_width="match_parent"
+      android:layout_height="99dp"
+      android:ems="10"
+      android:enabled="false"
+      android:fontFamily="@font/ansong"
+      android:gravity="top"
+      android:hint="소감"
+      android:inputType="textMultiLine"
+      android:lines="5"
+      android:maxLines="5" />
+  <EditText
+      android:id="@+id/timeText"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:ems="10"
+      android:hint="시간"
+      android:fontFamily="@font/ansong"
+      android:inputType="textPersonName"
+      android:enabled="false"/>
+  <EditText
+      android:id="@+id/placeEditText"
+      android:layout_width="match_parent"
+      android:layout_height="61dp"
+      android:ems="10"
+      android:fontFamily="@font/ansong"
+      android:inputType="number"
+      android:visibility="gone"
+      />
+
+
+  <ImageButton
+      android:id="@+id/placeButton"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/transparent"
+      app:srcCompat="@drawable/place" />
+
+  <ImageButton
+      android:id="@+id/imageButton2"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@android:color/transparent"
+      app:srcCompat="@drawable/foodsave" />
+
+  <ImageView
+      android:id="@+id/imageView3"
+      android:layout_width="149dp"
+      android:layout_height="wrap_content"
+      app:srcCompat="@drawable/cutcat" />
+
+</LinearLayout>
